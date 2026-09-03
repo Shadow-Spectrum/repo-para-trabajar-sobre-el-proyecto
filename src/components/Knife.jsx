@@ -10,7 +10,7 @@ export default function Knife() {
   useEffect(() => {
     const textureLoader = new THREE.TextureLoader();
     const gammaTexture = textureLoader.load(
-      "/models/default_ao_tga_559f1ac6_orm_436516294.png"
+      "/models/karambit_black_laminate_rough_psd_2e010018.png" 
     );
 
     gammaTexture.flipY = false;
