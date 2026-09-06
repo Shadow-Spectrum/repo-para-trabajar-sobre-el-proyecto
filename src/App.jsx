@@ -100,27 +100,27 @@ function App() {
                 camera={{ position: [0, 0.4, 2.4], fov: 28 }}
                 gl={{ antialias: true, alpha: true }}
               >
-                <fog attach="fog" args={[map.fog, 2.8, 7.5]} />
+                <fog attach="fog" args={[map.fog, 2.8, 8.2]} />
 
-                <ambientLight intensity={0.9} color="#eaf2ff" />
+                <ambientLight intensity={1.2} color="#f4f8ff" />
                 <directionalLight
                   position={[4, 4, 4]}
-                  intensity={2.8}
+                  intensity={4.5}
                   color={map.light}
                   castShadow
                 />
                 <spotLight
                   position={[-3, 3, 3]}
-                  angle={0.42}
+                  angle={0.38}
                   penumbra={0.9}
-                  intensity={70}
+                  intensity={120}
                   color={map.accent}
                 />
                 <spotLight
                   position={[2, 1.8, 3]}
-                  angle={0.5}
+                  angle={0.45}
                   penumbra={1}
-                  intensity={50}
+                  intensity={90}
                   color={map.coldLight}
                 />
 

@@ -23,13 +23,13 @@ export default function Knife() {
         child.material = child.material.clone();
         child.material.map = gammaTexture;
         child.material.metalness = 1;
-        child.material.roughness = 0.18;
-        child.material.envMapIntensity = 3.5;
-        child.material.clearcoat = 1.2;
-        child.material.clearcoatRoughness = 0.08;
+        child.material.roughness = 0.12;
+        child.material.envMapIntensity = 5.5;
+        child.material.clearcoat = 1.5;
+        child.material.clearcoatRoughness = 0.05;
         child.material.emissive = new THREE.Color("#0a1526");
-        child.material.emissiveIntensity = 0.6;
-        child.material.normalScale = new THREE.Vector2(1.2, 1.2);
+        child.material.emissiveIntensity = 0.9;
+        child.material.normalScale = new THREE.Vector2(1.4, 1.4);
       }
 
       child.material.needsUpdate = true;
