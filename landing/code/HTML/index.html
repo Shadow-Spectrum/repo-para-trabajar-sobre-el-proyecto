@@ -1,87 +1,133 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shadow Spectrum</title>
+    <meta name="description" content="Shadow Spectrum: exploraº tus skins de CS2 desde cualquier lugar." />
+    <title>Shadow Spectrum — Tu inventario, a otro nivel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../JS/script.js" defer></script>
   </head>
   <body>
-    <div class="top-menu">
-      <nav>
-        <a href="#home">HOME</a>
-        <a href="#info">INFO</a>
-        <a href="#prices">PRICES</a>
-        <a href="#about-us">ABOUT US</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Shadow Spectrum, inicio">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>shadow<span class="brand-accent">spectrum</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#info">Producto</a>
+        <a href="#prices">Planes</a>
+        <a href="#about-us">Nosotros</a>
       </nav>
-    </div>
-
-    <section class="banner-carrusel-imgs" id="home">
-      <!-- Carrusel de imágenes -->
-      <div class="carousel">
-        <img
-          src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1920&q=80"
-          alt="Wallpaper 1"
-        />
-
-        <img
-          src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1920&q=80"
-          alt="Wallpaper 2"
-        />
-
-        <img
-          src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1920&q=80"
-          alt="Wallpaper 3"
-        />
-
-        <img
-          src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1920&q=80"
-          alt="Wallpaper 4"
-        />
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false">
+          <span aria-hidden="true">☾</span>
+        </button>
+        <a class="button button-small button-primary" href="#prices">Empezar</a>
       </div>
+    </header>
 
-    </section>
-    <section class="container-info-business" id="info">
-      <div class="box-images">
-        <img src="../../imgs/image.png" alt="SHADOW SPECTRUM WORK" />
-      </div>
-      <div class="text">
-        <p class="text-title">¿HOW ITS SHADOW SPECTRUM?</p>
-        <p class="sub-title">Camone to explaining.</p>
-        <p class="text-12px">
-          Shadow Spectrum its a proyect of two teenagers trying to resolve a
-          problem on the market need to go into the game for see the skin in the
-          game, you are on your phone or outside and cant see your prety skins
-          like in game, we resolve that.
-        </p>
-      </div>
-    </section>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span class="status-dot"></span> La nueva forma de ver tu inventario</p>
+          <h1>Tus skins.<br /><span>Tu universo.</span></h1>
+          <p class="hero-copy">Explora, compara y disfruta tus colecciones de CS2 con una experiencia diseñada para sentir cada detalle.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#prices">Ver planes <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#info">Descubrir Shadow Spectrum <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><strong>+10k</strong> skins exploradas</span>
+            <span class="meta-divider"></span>
+            <span><strong>99.9%</strong> disponibilidad</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="visual-card visual-card-back"></div>
+          <div class="visual-card visual-card-main">
+            <div class="visual-top"><span>SHADOW / 01</span><span class="visual-dot"></span></div>
+            <div class="knife-art" aria-label="Silueta decorativa de una karambit"></div>
+            <div class="visual-bottom"><span>Karambit • Fade</span><strong>★ 98.4</strong></div>
+          </div>
+          <div class="floating-chip chip-top"><span class="chip-icon">✦</span><span><small>Valor estimado</small><strong>$1,284.20</strong></span></div>
+          <div class="floating-chip chip-bottom"><span class="chip-icon chip-green">✓</span><span><small>Estado del inventario</small><strong>Sincronizado</strong></span></div>
+        </div>
+        <a class="scroll-cue" href="#info" aria-label="Desplazar a información"><span></span> Desliza para explorar</a>
+      </section>
 
-    <section class="prices" id="prices">
-      <!--Box Prices of lower category-->
-      <div class="box-grey">
-        <p class="prices-text"></p>
-        <p class="number-text"></p>
-        <p class="info-text"></p>
-      </div>
+      <section class="section info-section" id="info">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Una mirada diferente</p>
+          <h2>Todo lo que amas,<br /><em>en un solo lugar.</em></h2>
+        </div>
+        <div class="info-grid">
+          <article class="info-card info-card-large reveal">
+            <div class="card-icon">◌</div>
+            <h3>Diseñado para mirar</h3>
+            <p>Tu inventario merece algo más que una lista. Shadow Spectrum convierte cada skin en una experiencia visual, rápida y memorable.</p>
+            <a class="text-link" href="https://steamcommunity.com/" target="_blank" rel="noopener noreferrer">Conectar con Steam <span>↗</span></a>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon">⌁</div>
+            <h3>Datos en tiempo real</h3>
+            <p>Precios y tendencias actualizados para que tomes decisiones con confianza.</p>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon">◈</div>
+            <h3>Tu colección, tu control</h3>
+            <p>Compara, organiza y comparte tus piezas favoritas sin complicaciones.</p>
+          </article>
+        </div>
+      </section>
 
-      <div class="box-red">
-        <p class="prices-text"></p>
-        <p class="number-text"></p>
-        <p class="info-text"></p>
-      </div>
-        
-      <div class="box-gold">
-        <p class="prices-text"></p>
-        <p class="number-text"></p>
-        <p class="info-text"></p>
-      </div>
+      <section class="section pricing-section" id="prices">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Planes simples y transparentes</p>
+          <h2>Elige tu <em>nivel.</em></h2>
+          <p>Empieza gratis. Cambia de plan cuando quieras, sin letra pequeña.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <p class="plan-label">Explorer</p><h3>Gratis</h3><p class="plan-description">Para descubrir el universo de tus skins.</p>
+            <a class="button button-outline" href="https://steamcommunity.com/" target="_blank" rel="noopener noreferrer">Comenzar gratis</a>
+            <ul><li>Inventario básico</li><li>Vista detallada de skins</li><li>Actualización diaria</li></ul>
+          </article>
+          <article class="price-card featured reveal">
+            <span class="popular-badge">Más elegido</span><p class="plan-label">Collector</p><h3>4,99 € <small>/ mes</small></h3><p class="plan-description">Para quienes quieren ver cada detalle.</p>
+            <a class="button button-primary" href="mailto:hola@shadowspectrum.dev?subject=Quiero%20Collector">Elegir Collector <span>↗</span></a>
+            <ul><li>Todo lo de Explorer</li><li>Precios en tiempo real</li><li>Comparador avanzado</li></ul>
+          </article>
+          <article class="price-card reveal">
+            <p class="plan-label">Pro trader</p><h3>9,99 € <small>/ mes</small></h3><p class="plan-description">Para llevar tu estrategia al siguiente nivel.</p>
+            <a class="button button-outline" href="mailto:hola@shadowspectrum.dev?subject=Quiero%20Pro%20trader">Hablar con nosotros</a>
+            <ul><li>Todo lo de Collector</li><li>Alertas de mercado</li><li>Soporte prioritario</li></ul>
+          </article>
+        </div>
+        <div class="market-links reveal">
+          <span>Explora también</span>
+          <a href="https://csfloat.com/" target="_blank" rel="noopener noreferrer">CSFloat ↗</a>
+          <a href="https://skinmonkey.com/" target="_blank" rel="noopener noreferrer">SkinMonkey ↗</a>
+          <a href="https://www.counter-strike.net/" target="_blank" rel="noopener noreferrer">Counter-Strike ↗</a>
+        </div>
+      </section>
 
-    </section>
+      <section class="section about-section" id="about-us">
+        <div class="about-copy reveal"><p class="eyebrow">Hecho con intención</p><h2>Dos personas.<br /><em>Una obsesión.</em></h2><p>Somos un pequeño equipo construyendo herramientas para que la comunidad de CS2 disfrute su inventario como nunca antes. Sin ruido, con curiosidad y atención a cada píxel.</p><a class="text-link" href="mailto:hola@shadowspectrum.dev">Escríbenos <span>↗</span></a></div>
+        <div class="about-stat reveal"><strong>2024</strong><span>Nacimos para cambiar<br />la forma de mirar.</span></div>
+      </section>
+    </main>
 
-    <footer id="about-us">
-      <div class="contact-us"></div>
-      <div class="important-info"></div>
-      <div class="laws-how-protect-us"></div>
+    <footer class="site-footer">
+      <a class="brand" href="#home"><span class="brand-mark">S</span><span>shadow<span class="brand-accent">spectrum</span></span></a>
+      <p>Hecho para quienes ven más allá de una skin.</p>
+      <div class="footer-links"><a href="#info">Producto</a><a href="#prices">Planes</a><a href="mailto:hola@shadowspectrum.dev">Contacto</a></div>
+      <small>© 2024 Shadow Spectrum. No afiliado a Valve Corp.</small>
     </footer>
   </body>
 </html>
